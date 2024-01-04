@@ -6,10 +6,14 @@
 #include "../vendor/raygui/raygui.h"
 #undef RAYGUI_IMPLEMENTATION
 
+// Config
+int DEFAULT_TEXT_SIZE = 20;
+
 int main()
 {
     SetTargetFPS(60);
-    InitWindow(1000, 1100, "Simple snake game");
+    InitWindow(1000, 1000, "Simple snake game");
+    GuiSetStyle(DEFAULT, TEXT_SIZE, DEFAULT_TEXT_SIZE);
 
     while (!WindowShouldClose())
     {
