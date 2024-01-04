@@ -6,6 +6,8 @@ Hello stranger, welcome!
 This is my attempt to create a simple snake game in C using nothing but [Raylib](https://www.raylib.com/).
 If you find this project interesting, feel free to drop a star.
 
+---
+
 ### Environment
 
 You need a C99 compiler
