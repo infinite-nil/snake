@@ -1,17 +1,7 @@
-# Compiler
-CC=cc
-
-# Get the SO
-UNAME_S := $(shell uname -s)
-
-# Compile flags
-CC_FLAGS= -Wall -Wextra -Wpedantic
-
-# Entry
-ENTRY=./src/main.c
-
-# Output
-NAME=./out/snake
+CC=cc # Compiler
+CC_FLAGS= vendor/raylib/src/libraylib.a -lGL -lm -lpthread -ldl -lrt -lX11 -Wall -Wextra -Wpedantic # Compile flags
+ENTRY=./src/main.c # Entry
+NAME=./out/snake # Output
 
 clean:
 	$(shell rm -rf out && mkdir out)
