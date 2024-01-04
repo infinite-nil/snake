@@ -23,3 +23,19 @@ cd ../..
 ```
 
 This will create the static library `raylib/src/libraylib.a` that we depends on.
+
+### Building and running
+
+Compile the project using make
+
+```
+make all
+```
+
+This command will delete previous builds and build again.
+
+The output binary will be put on `/out` dir.
+
+```
+./out/snake
+```
