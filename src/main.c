@@ -1,6 +1,10 @@
 #include <stdio.h>
-
 #include "../vendor/raylib/src/raylib.h"
+
+#define RAYGUI_IMPLEMENTATION
+#define RAYGUI_SUPPORT_RICONS
+#include "../vendor/raygui/raygui.h"
+#undef RAYGUI_IMPLEMENTATION
 
 int main()
 {
